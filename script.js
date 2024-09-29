@@ -7,6 +7,7 @@ let newrow=document.createElement("tr")
 let total=document.createElement("td")
 let sum=document.createElement("td")
 total.innerText="Total Price";
+sum.id="ans"
 table.append(total);
 table.append(sum)
 
@@ -19,8 +20,6 @@ const getSum = () => {
 		totalsum=totalsum+parseInt(price[i].innerText)
 	}
 	sum.innerText=totalsum
-  
 };
-
 getSumBtn.addEventListener("click", getSum);
 
